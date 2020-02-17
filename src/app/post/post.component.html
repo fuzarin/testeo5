@@ -1,0 +1,41 @@
+<section id="header" class="py-5 header_interna">
+        <div class="container">
+          <div class="col-lg-6">
+            <div class="logo_wrapper">
+              <img id="logo" src="http://www.oficina5.com.br/solucoes-inteligentes/img/logo-oficina5.png" alt="Oficina5 Teste">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h2>{{singlePost?.title}}</h2>
+          </div>
+        </div>
+      </section>
+
+      <section id="main" class="mt-5 mb-5">
+        <div class="container">
+
+                <p>{{singlePost?.body}}</p>
+                
+                <div class="actions">
+                    <button class="btn-primary" (click)="mostrarComentarios();">Veja os Comentários</button>
+                    <button class="btn-secondary voltar" (click)="navigateToHome();">Voltar para a Home</button>
+                </div>
+
+                <div class="comentarios">
+                  <h3 class="mt-5">Comentários</h3>
+                    {{comentarios.body }}
+                </div>
+                
+        </div>
+      </section>
+
+
+<section id="footer" class="py-5 mt-5">
+    <div class="container">
+        <div class="col-lg-12">
+            <div class="logo_wrapper logo_rodape">
+                <img id="logo" src="http://www.oficina5.com.br/solucoes-inteligentes/img/logo-oficina5.png" alt="Oficina5 Teste">
+            </div>
+        </div>
+    </div>
+</section>

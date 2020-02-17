@@ -1,0 +1,46 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+app-posts .container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#logo {
+    max-width: 15rem;
+}
+
+#header,#footer {
+    background-color: black
+}
+
+#footer .logo_rodape {
+    display: flex;
+    justify-content: center;
+}
+
+#header h2 {
+    color: white;
+    font-weight: bold;
+}
+
+.card-body {
+    height: 349px;
+    position: relative;
+}
+
+
+.header_interna .container {
+    display: flex;
+}
+
+.voltar {
+    margin-left: 10px;
+}
+
+.card-body button {
+    position: absolute;
+    bottom: 10px
+}
+

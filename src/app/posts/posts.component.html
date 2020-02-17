@@ -1,0 +1,33 @@
+<section id="header" class="py-5">
+  <div class="container">
+    <div class="col-lg-6">
+      <div class="logo_wrapper">
+        <img id="logo" src="http://www.oficina5.com.br/solucoes-inteligentes/img/logo-oficina5.png" alt="Oficina5 Teste">
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <h2>Este é o meu teste para a Oficina5</h2>
+    </div>
+  </div>
+</section>
+<div class="container">
+  <div *ngFor="let posts of postagens" class="col-lg-4 mt-5">
+    <div class="card ">
+      <div class="card-body">
+        <h3 class="card-title">{{posts?.title}}</h3>
+        <p class="card-text">{{posts?.body}}</p>
+        <button href="#" class="btn btn-primary" (click)="navigateToPost(posts?.id)">Veja mais</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section id="footer" class="py-5 mt-5">
+    <div class="container">
+      <div class="col-lg-12">
+        <div class="logo_wrapper logo_rodape">
+          <img id="logo" src="http://www.oficina5.com.br/solucoes-inteligentes/img/logo-oficina5.png" alt="Oficina5 Teste">
+        </div>
+      </div>
+    </div>
+  </section>
